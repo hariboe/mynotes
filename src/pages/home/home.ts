@@ -27,7 +27,7 @@ export class HomePage {
   getNote(createDate: number) {
     this.noteService.getNote(createDate).then((n) => {
       this.note = n;
-      this.navCtrl.push(ViewNotePage, { note: this.note})
+      this.navCtrl.push(ViewNotePage, { note: this.note })
     })
   }
 
